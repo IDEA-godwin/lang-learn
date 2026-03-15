@@ -1,1 +1,0 @@
-import{t as e}from"./index-CJrWiHwT.js";var t=e();function n(){return(0,t.jsx)(t.Fragment,{children:`Home Page!!`})}function r(){return(0,t.jsx)(n,{})}export{r as component};

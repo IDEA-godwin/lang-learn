@@ -24,6 +24,7 @@ export default defineConfig({
       }
     })
   ],
+  base: '/lang-learn/',
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),

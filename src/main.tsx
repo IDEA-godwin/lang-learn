@@ -1,6 +1,7 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import { createRouter, RouterProvider } from '@tanstack/react-router'
+import { AuthProvider } from '@/contexts/AuthContext'
 
 import { routeTree } from './routeTree.gen.ts'
 
@@ -19,6 +20,9 @@ const router = createRouter({
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <RouterProvider router={router} />
+    <AuthProvider>
+      <RouterProvider router={router} />
+    </AuthProvider>
   </StrictMode>
 )
+

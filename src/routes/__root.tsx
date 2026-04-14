@@ -1,6 +1,6 @@
 import * as React from 'react'
 import { Outlet, createRootRoute } from '@tanstack/react-router'
-import Header from '@/components/header'
+import { FooterNav } from '@/components/footer-nav'
 
 export const Route = createRootRoute({
    component: RootComponent,
@@ -9,9 +9,9 @@ export const Route = createRootRoute({
 function RootComponent() {
    return (
       <React.Fragment>
-         <div className=" max-w-5xl mx-auto w-full ">
-            <Header />
+         <div className="w-full lg:max-w-3xl mx-auto">
             <Outlet />
+            <FooterNav />
          </div>
       </React.Fragment>
    )
